@@ -45,7 +45,7 @@ nav {
   display: flex;
   gap: 15px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 0.75rem;
 }
 
 nav a {
@@ -73,7 +73,7 @@ nav a:hover {
 
 .hero h1 {
   margin: 0;
-  font-size: 40px;
+  font-size: 2rem;
   color: #70d000;
 }
 
@@ -106,13 +106,6 @@ nav a:hover {
   html {
     font-size: 16px;
   }
-  nav {
-    font-size: 0.75rem;
-  }
-
-  .hero h1 {
-    font-size: 2rem;
-  }
 
   .wrapper-centered {
     width: 100%;
@@ -123,8 +116,19 @@ nav a:hover {
     padding: 20px 10px 15px 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
+    justify-content: center;
   }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  nav a {
+    width: 25%;
+    text-align: center;
+  }
+
   .hero {
     height: 70vh;
     background-color: #080808;
